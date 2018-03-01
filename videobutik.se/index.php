@@ -20,7 +20,7 @@
         // Skapa en SQL-sats
 
         $query = "SELECT k.namn, f.titel, u.utDatum, k.kundnummer, f.filmID
-        FROM kund AS k, uthyrning, AS u, film as f
+        FROM kund AS k, uthyrning AS u, film AS f
         WHERE k.kundnummer = u.Kund
         AND f.filmID = u.Film
         AND u.inDatum IS NULL
